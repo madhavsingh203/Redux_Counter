@@ -1,13 +1,13 @@
-// store.js
+
 
 import { createStore } from "redux";
 
-// Define the initial state
+
 const initialState = {
   count: 0
 };
 
-// Define the reducer function
+
 const counterReducer = (state = initialState, action) => {
   switch (action.type) {
     case "INCREMENT":
@@ -19,7 +19,7 @@ const counterReducer = (state = initialState, action) => {
   }
 };
 
-// Create the Redux store
+
 const store = createStore(counterReducer);
 
 export default store;
