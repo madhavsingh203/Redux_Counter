@@ -17,7 +17,9 @@ const Counter = () => {
 
   return (
     <div>
-      <h2>Counter: {count}</h2>
+      <h2 style={{
+        marginBottom: '14px'
+      }}>Counter: {count}</h2>
       <button onClick={handleIncrement}>Increment</button>
       <button onClick={handleDecrement}>Decrement</button>
     </div>
